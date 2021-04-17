@@ -6,6 +6,16 @@ authors = ["AndBondStyle <andbondstyle@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.8"
+torch = ">=1.7"
+librosa = "^0.8.0"
+youtube_dl = "2021.02.10"
+pyrubberband = "^0.3.0"
+python-slugify = "*"
+requests = "*"
+treelib = "*"
+tqdm = "*"
+pandas = "*"
+retry = "*"
 
 [tool.poetry.dev-dependencies]
 
