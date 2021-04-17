@@ -37,7 +37,7 @@ class KeywordDetector:
     def predict(self):
         chunk = self.raw_input_buffer[-self.input_samples :].copy()
         chunk = librosa.util.normalize(chunk)
-        x = self.extractor(chunk)
+        x = self.extractor(chunk).astype("float32")
         x = x.reshape((1, self.model.input_channels, self.model.input_size))
         x = torch.as_tensor(x).to(self.device)
         pred = self.model.forward(x)
