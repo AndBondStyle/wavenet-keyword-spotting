@@ -1,6 +1,6 @@
 from torch.utils.data import Dataset, DataLoader
-from wavenet.dataset import DatasetConfig
-from wavenet.model import WaveNetKWS
+from wavenet_kws.dataset import DatasetConfig
+from wavenet_kws.model import WaveNetKWS
 from tqdm.auto import tqdm
 from pathlib import Path
 import pickle

@@ -1,5 +1,5 @@
-from wavenet.training import model_from_checkpoint
-from wavenet.dataset import init_feature_extractor
+from wavenet_kws.training import model_from_checkpoint
+from wavenet_kws.dataset import init_feature_extractor
 from numpy_ringbuffer import RingBuffer
 from time import time, sleep
 from pathlib import Path

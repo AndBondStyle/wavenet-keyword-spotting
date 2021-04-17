@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field, asdict
-from wavenet.helpers import *
+from wavenet_kws.helpers import *
 from tqdm.auto import tqdm
 from typing import Tuple
 from pathlib import Path
