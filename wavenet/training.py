@@ -160,6 +160,9 @@ if __name__ == "__main__":
             dataset_config=dataset.config.asdict(),
             model_config=MODEL_CONFIG,
             epoch=status["epoch"],
+            train_loss=status["train_loss"],
+            precision=status["precision"],
+            recall=status["recall"],
             model_state_dict=model.state_dict(),
             optimizer_state_dict=status["optimizer"].state_dict(),
         )
